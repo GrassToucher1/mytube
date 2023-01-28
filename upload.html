@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home Page</a>
+            <a href="./Collection/collection-1.html">Collection 1</a>
+            <a href="./Collection/collection-2.html">Collection 2</a>
+            <a href="./Collection/collection-3.html">Collection 3</a>
+            <a href="../upload.html">New Video</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Add New Video</h1>
+        <form action="#" method="post" name="form-example">
+            <label for="title">Video Title</label>
+            <br>
+            <input type="text" id=title name="title" placeholder="Enter title" required>
+            <br><br>
+            <label for="description"></label>
+            <br>
+            <textarea style="resize:none" name="description" placeholder="Add description..." cols="25" rows="5" required></textarea>
+            <br><br>
+            <label for="file">Video File</label>
+            <br>
+            <input type="file" id="file" name="file" placeholder="Choose File" required>
+            <br><br>
+            <select id="collection" name="collection" for="collection" required>
+                <option value="" disabled selected>Choose Collection</option>
+                <option value="collection1">Collection 1</option>
+                <option value="collection2">Collection 2</option>
+                <option value="collection3">Collection 3</option>
+            </select>
+            <br><br>
+            <input type="radio" id="public" name="visibility" required>
+            <label for="public">Public</label>
+            <input type="radio" id="private" name="visibility" required>
+            <label for="private">Private</label>
+            <br><br><br>
+            <input type="submit" id="submit" name="submit" value="Upload Video">
+        </form>
+    </main>
+    <footer id="footer">
+        <hr>
+        <section>
+            <a href="#"><img src="./logos/img19.png" alt="twitter" class="footer-img"></a>
+            <a href="#"><img src="./logos/img20.png" alt="facebook"></a>
+            <p>copyright &copy;2023 MyTube, all rights reserved</p>
+        </section>
+    </footer>
+</body>
+</html>
